@@ -1,0 +1,42 @@
+.income-ext{
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.income-total-container{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.range-container{
+    padding: 0 20px;
+}
+
+.total-container{
+    padding: 0 20px;
+    color: var(--foreground);
+    font-size: 48px;
+    font-family: 'Roboto';
+    font-weight: 100;
+}
+
+.currency-container{
+    font-size: 30px;
+    font-family: 'Roboto Condensed';
+    font-weight: 400;
+}
+
+.income-chart-container{
+    height: 220px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--widget-radius);
+    background-color: var(--widget-second-color);
+    margin: var(--widget-radius);
+    bottom: 0;
+    border: 2px solid #ececec;
+    padding: 20px 20px 10px 20px;
+}

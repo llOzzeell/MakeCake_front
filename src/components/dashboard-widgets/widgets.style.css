@@ -1,0 +1,30 @@
+.dashboard-widget-container{
+    background-color: var(--dashboard-widgets-color);
+    border-radius: var(--widget-radius);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    --widget-radius: 20px;
+    --dashboard-widgets-color: #fffbfb;
+    --widget-second-color: #f8f7f7;
+}
+
+.dashboard-widget-title{
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Roboto Condensed';
+    font-weight: 700;
+    color: var(--nav-inactive);
+    opacity: 0.5;
+}
+
+.dashboard-widget-content{
+    width: 100%;
+    flex: 1;
+}

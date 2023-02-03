@@ -1,0 +1,20 @@
+.dashboard-widget-content-today-orders-ext{
+    border-radius: 0 0 var(--widget-radius) var(--widget-radius);
+    clip-path: inset(0% 0% 0% 0% round 0 0 var(--widget-radius) var(--widget-radius));
+}
+
+.today-orders-ext{
+    height: 780px;
+}
+
+.orders-list-container{
+    height: 740px;
+    overflow: auto;
+}
+
+.orders-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+}
