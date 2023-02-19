@@ -62,7 +62,7 @@ let chartData = {
 }
 
 const chartColor = '#ff875e';
-const chartBorderRadius = 8;
+const chartBorderRadius = 16;
 
 export default function Income() {
     const [range, setRange] = useState('Week')
@@ -116,23 +116,24 @@ export default function Income() {
     }
 
     return (
-        <div className="dashboard-widget-container income-ext">
-            <div className="dashboard-widget-title">
-                <span>Income</span>
-            </div>
-            <div className="dashboard-widget-content">
+        <div className="dashboard-widget-container income-widget">
+            <div className="income-header">
+                <div className="income-header-text">
+                    <span className="widget-title-text">Income</span>
+                    <span className="widget-title-text-secondary">The amount you earned for the selected period</span>
+                </div>
                 <div className="income-total-container">
-                    <div className="range-container">
-                        <Dropdown model={["Week", "Month", "Year"]} onChanged={rangeChanged}/>
-                    </div>
                     <div className="total-container">
                         <span>{total}</span>
                         <strong className="currency-container"> ₪</strong>
                     </div>
+                    <div className="range-container">
+                        <Dropdown model={["Week", "Month", "Year"]} onChanged={rangeChanged}/>
+                    </div>
                 </div>
-                <div className="income-chart-container">
-                    <Bar options={options} data={data} />
-                </div>
+            </div>
+            <div className="chart-container">
+                <Bar options={options} data={data} />
             </div>
         </div>
     )

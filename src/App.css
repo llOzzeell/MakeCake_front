@@ -29,7 +29,11 @@
     --error: rgb(255, 83, 83);
     --nav-inactive: #AB6853;
     --nav-active: var(--foreground);
-    --shadow: rgba(128, 128, 128, 0.3)
+    --shadow: rgba(128, 128, 128, 0.3);
+    --widget-radius: 20px;
+    --dashboard-widgets-color: #fffbfb;
+    --widget-second-color: #eceaea;
+    --widget-line-separator: #dadada;
 }
 
 *{

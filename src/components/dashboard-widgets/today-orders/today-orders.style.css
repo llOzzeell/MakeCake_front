@@ -1,20 +1,95 @@
-.dashboard-widget-content-today-orders-ext{
-    border-radius: 0 0 var(--widget-radius) var(--widget-radius);
-    clip-path: inset(0% 0% 0% 0% round 0 0 var(--widget-radius) var(--widget-radius));
+.today-orders-widget{
+    height: 780px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
 }
 
-.today-orders-ext{
-    height: 780px;
+.today-orders-header{
+    /*height: 100px;*/
+    width: 100%;
+    /*padding: 20px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.today-orders-header-title-row{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    width: 100%;
+}
+
+.today-orders-header-find-container{
+    height: 100%;
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.today-orders-header-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.today-orders-header-orders-list-title{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 1fr;
+    grid-template-rows: repeat(1, 30px);
+    width: 100%;
+    padding: 0 20px;
+    border-bottom: 2px solid var(--widget-line-separator);
+}
+
+.today-orders-header-orders-list-title-item{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: var(--foreground);
+    opacity: 0.5;
+    gap: 5px;
 }
 
 .orders-list-container{
-    height: 740px;
+    width: 100%;
+    flex: 1;
     overflow: auto;
 }
 
 .orders-list{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 2px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 5px;
+    margin-top: 5px;
 }
+
+/*.dashboard-widget-content-today-orders-ext{*/
+/*    border-radius: 0 0 var(--widget-radius) var(--widget-radius);*/
+/*    clip-path: inset(0% 0% 0% 0% round 0 0 var(--widget-radius) var(--widget-radius));*/
+/*}*/
+
+/*.today-orders-ext{*/
+/*    height: 780px;*/
+/*}*/
+
+/*.orders-list{*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    justify-content: center;*/
+/*    gap: 2px;*/
+/*}*/
