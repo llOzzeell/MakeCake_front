@@ -9,6 +9,7 @@ interface IInputProps{
     required?: boolean
     className?: string
     type?: string
+    onChange?: any
 }
 
 const InputField: React.FC<IInputProps> = (props: IInputProps) => {
@@ -33,6 +34,7 @@ const InputField: React.FC<IInputProps> = (props: IInputProps) => {
                         : props.type
                 }
                 required={props.required}
+                onChange={props.onChange}
                 />
                 {
                     props.type === 'password' ?
