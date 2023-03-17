@@ -6,7 +6,7 @@ import './orders.style.css'
 export default function Orders() {
   return (
     <div className="data-container ">
-      <AllOrders className="all-orders-container"/>
+      <AllOrders className="all-orders-container" header="Orders" description="All orders"/>
     </div>
   )
 }

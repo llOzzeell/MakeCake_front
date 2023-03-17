@@ -6,7 +6,7 @@
     align-items: flex-start;
 }
 
-.today-orders-header{
+.orders-header{
     /*height: 100px;*/
     width: 100%;
     /*padding: 20px;*/
@@ -17,7 +17,7 @@
     gap: 20px;
 }
 
-.today-orders-header-title-row{
+.orders-header-title-row{
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
@@ -25,7 +25,7 @@
     width: 100%;
 }
 
-.today-orders-header-find-container{
+.orders-header-find-container{
     height: 100%;
     flex: 1;
     display: flex;
@@ -33,7 +33,7 @@
     align-items: flex-start;
 }
 
-.today-orders-header-text{
+.orders-header-text{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -41,7 +41,7 @@
     gap: 10px;
 }
 
-.today-orders-header-orders-list-title{
+.orders-header-orders-list-title{
     display: grid;
     grid-template-columns: 1fr 3fr 1fr 1fr;
     grid-template-rows: repeat(1, 30px);
@@ -50,7 +50,7 @@
     border-bottom: 2px solid var(--widget-line-separator);
 }
 
-.today-orders-header-orders-list-title-item{
+.orders-header-orders-list-title-item{
     display: flex;
     justify-content: flex-start;
     align-items: center;

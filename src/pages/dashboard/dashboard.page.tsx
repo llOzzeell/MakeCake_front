@@ -9,7 +9,7 @@ export default function Dashboard() {
   return (
     <div className="data-container dashboard-container">
         <div className="dashboard-content">
-            <Orders className="today-orders"/>
+            <Orders className="today-orders" header="Today orders" description="Orders for today"/>
             <WeekOrders />
             <Income />
         </div>

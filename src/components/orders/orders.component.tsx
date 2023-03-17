@@ -6,10 +6,12 @@ import {devOrders} from "./dev-data";
 import SearchField from "../search-field/search-field.component";
 
 interface IOrderProps{
-    className: string
+    className: string,
+    header: string,
+    description: string
 }
 
-export default function Orders({className}: IOrderProps) {
+export default function Orders({className, header, description}: IOrderProps) {
 
     const [orders, setOrders] = useState(devOrders)
     const [filteredOrders, setFilteredOrders] = useState(orders)
@@ -27,14 +29,14 @@ export default function Orders({className}: IOrderProps) {
     }, [orders, searchString])
 
     return (
-        <div className= {`dashboard-widget-container today-orders-widget ${className}` }>
-            <div className="today-orders-header">
-                <div className="today-orders-header-title-row">
-                    <div className="today-orders-header-text">
-                        <span className="widget-title-text">Today orders</span>
-                        <span className="widget-title-text-secondary">List of orders to be given to customers today</span>
+        <div className= {`dashboard-widget-container today-orders-widget ${className}`}>
+            <div className="orders-header">
+                <div className="orders-header-title-row">
+                    <div className="orders-header-text">
+                        <span className="widget-title-text">{header}</span>
+                        <span className="widget-title-text-secondary">{description}</span>
                     </div>
-                    <div className="today-orders-header-find-container">
+                    <div className="orders-header-find-container">
                         <SearchField placeholder="Find" onChangeHandler={
                             (event: any) => {
                                 setSearchString(event.target.value.toLowerCase())
@@ -43,14 +45,14 @@ export default function Orders({className}: IOrderProps) {
                     </div>
                 </div>
 
-                <div className="today-orders-header-orders-list-title">
-                    <div className="today-orders-header-orders-list-title-item">
+                <div className="orders-header-orders-list-title">
+                    <div className="orders-header-orders-list-title-item">
                         <span>Order</span>
                     </div>
-                    <div className="today-orders-header-orders-list-title-item">
+                    <div className="orders-header-orders-list-title-item">
                         <span>Customer</span>
                     </div>
-                    <div className="today-orders-header-orders-list-title-item">
+                    <div className="orders-header-orders-list-title-item">
                         <span>Total</span>
                     </div>
                 </div>
