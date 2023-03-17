@@ -5,7 +5,7 @@ import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
 import User from '../user/user.component'
 
 export default function DashboardPanel() {
-  const [currentindex, setIndex] = useState(0)
+  const [currentIndex, setIndex] = useState(0)
   return (
     <div className="dashboard-side-panel">
       <div className='user-section-container'>

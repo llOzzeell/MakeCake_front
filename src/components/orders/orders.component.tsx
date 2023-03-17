@@ -4,6 +4,7 @@ import './today-orders.style.css'
 import OrderDelegate from './order-delegate/order-delegate.component'
 import {devOrders} from "./dev-data";
 import SearchField from "../search-field/search-field.component";
+import AddButtonComponent from "../add-button/add-button.component";
 
 interface IOrderProps{
     className: string,
@@ -66,6 +67,7 @@ export default function Orders({className, header, description}: IOrderProps) {
                     }
                 </div>
             </div>
+            <AddButtonComponent to="/orders/new" text="Add Order"/>
         </div>
     )
 }
