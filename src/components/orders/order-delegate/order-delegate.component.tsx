@@ -1,6 +1,5 @@
-import React, {Fragment, useState} from 'react';
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
+import React, {useState} from 'react';
+
 import './order-delegate.style.css'
 
 interface IOrderProps{
