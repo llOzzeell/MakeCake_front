@@ -1,14 +1,15 @@
 import React, {useEffect, useState} from 'react'
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import { solid } from '@fortawesome/fontawesome-svg-core/import.macro'
-import '../widgets.style.css'
+import '../dashboard-widgets/widgets.style.css'
 import './today-orders.style.css'
 import OrderDelegate from './order-delegate/order-delegate.component'
 import {devOrders} from "./dev-data";
-import Dropdown from "../../dropdown/dropdown.component";
-import SearchField from "../../search-field/search-field.component";
+import SearchField from "../search-field/search-field.component";
 
-export default function TodayOrders() {
+interface IOrderProps{
+    className: string
+}
+
+export default function Orders({className}: IOrderProps) {
 
     const [orders, setOrders] = useState(devOrders)
     const [filteredOrders, setFilteredOrders] = useState(orders)
@@ -26,7 +27,7 @@ export default function TodayOrders() {
     }, [orders, searchString])
 
     return (
-        <div className="dashboard-widget-container today-orders-widget">
+        <div className= {`dashboard-widget-container today-orders-widget ${className}` }>
             <div className="today-orders-header">
                 <div className="today-orders-header-title-row">
                     <div className="today-orders-header-text">
