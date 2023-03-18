@@ -22,8 +22,7 @@ function OrderDelegate(props: IOrderProps) {
                     <span>{customer.name}</span>
                 </div>
                 <div className="order-delegate-table-container">
-                    <span>{totalCost}</span>
-                    <span>₪</span>
+                    <span>{totalCost}₪</span>
                 </div>
                 <div className="order-delegate-table-container align-right">
                     <button className="expand-button" onClick={
@@ -61,8 +60,7 @@ function OrderDelegate(props: IOrderProps) {
                                         <span>{r.quantity}</span>
                                     </div>
                                     <div className="order-delegate-recipe-title-item">
-                                        <span>{r.total}</span>
-                                        <span>₪</span>
+                                        <span>{r.total}₪</span>
                                     </div>
                                 </div>
                             )

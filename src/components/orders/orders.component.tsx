@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import '../dashboard-widgets/widgets.style.css'
-import './today-orders.style.css'
+import './orders.style.css'
 import OrderDelegate from './order-delegate/order-delegate.component'
 import {devOrders} from "./dev-data";
 import SearchField from "../search-field/search-field.component";
-import AddButtonComponent from "../add-button/add-button.component";
+import NavigationButtonComponent from "../navigation-button/navigation-button.component";
 
 interface IOrderProps{
     className: string,
@@ -30,7 +30,7 @@ export default function Orders({className, header, description}: IOrderProps) {
     }, [orders, searchString])
 
     return (
-        <div className= {`dashboard-widget-container today-orders-widget ${className}`}>
+        <div className= {`dashboard-widget-container orders-widget ${className}`}>
             <div className="orders-header">
                 <div className="orders-header-title-row">
                     <div className="orders-header-text">
@@ -67,7 +67,7 @@ export default function Orders({className, header, description}: IOrderProps) {
                     }
                 </div>
             </div>
-            <AddButtonComponent to="/orders/new" text="Add Order"/>
+            <NavigationButtonComponent to="/orders/new" text="Add Order"/>
         </div>
     )
 }

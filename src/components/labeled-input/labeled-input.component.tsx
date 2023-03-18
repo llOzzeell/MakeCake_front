@@ -12,7 +12,7 @@ interface IInputProps{
     onChange?: any
 }
 
-const InputField: React.FC<IInputProps> = (props: IInputProps) => {
+const LabeledField: React.FC<IInputProps> = (props: IInputProps) => {
     const [errorString, setErrorString] = useState('');
     const [passwordVisible, setPasswordVisible] = useState(false);
 
@@ -55,7 +55,7 @@ const InputField: React.FC<IInputProps> = (props: IInputProps) => {
     )
 }
 
-InputField.defaultProps = {
+LabeledField.defaultProps = {
     title: '',
     placeholder: '',
     required: false,
@@ -63,4 +63,4 @@ InputField.defaultProps = {
     type: 'text'
 }
 
-export default InputField
+export default LabeledField

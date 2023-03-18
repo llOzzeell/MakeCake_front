@@ -1,13 +1,13 @@
 import React from 'react'
 import {NavLink} from "react-router-dom";
-import './add-button.style.css'
+import './navigation-button.style.css'
 
 interface IButtonProps {
     text?: string
     to: string
 }
 
-export default function AddButtonComponent(props: IButtonProps) {
+export default function NavigationButtonComponent(props: IButtonProps) {
 
     return (
         <div className="button-container">
